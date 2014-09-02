@@ -7,7 +7,9 @@
 
     // Wait for device API libraries to load
     //
+function init() {
     document.addEventListener("deviceready", onDeviceReady, false);
+}
 
     // device APIs are available
     //
@@ -23,7 +25,7 @@
 
     </script>
   </head>
-  <body>
+  <body onLoad="init()">
     <p id="deviceProperties">Loading device properties...</p>
   </body>
 </html>
